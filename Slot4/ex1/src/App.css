@@ -1,0 +1,21 @@
+.pizza-img-wrapper {
+  height: 200px;        /* KHUNG ẢNH CỐ ĐỊNH */
+  overflow: hidden;     /* CẮT PHẦN DƯ */
+}
+
+.pizza-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* CẮT ẢNH CHO ĐỀU */
+}
+
+.pizza-img-wrapper {
+  height: 180px;
+  overflow: hidden;
+}
+
+.pizza-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
