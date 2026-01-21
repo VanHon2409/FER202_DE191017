@@ -26,7 +26,9 @@ function Menu() {
               <div className="card-body">
                 <h5 className="card-title">{pizza.name}</h5>
                 <p className="text-danger fw-bold">${pizza.price}</p>
-                <button className="btn btn-dark w-100">Buy</button>
+                <button className="btn btn-outline-dark w-100">View Detail</button>
+                <button className="btn btn-dark w-100 mt-2">Buy</button>
+                
               </div>
 
             </div>

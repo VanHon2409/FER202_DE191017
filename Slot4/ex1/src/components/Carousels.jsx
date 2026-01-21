@@ -1,4 +1,4 @@
-import { carouselSlides } from "../data/data.js"
+import { carouselSlides } from "../data/carousel.js"
 import { Carousel } from "react-bootstrap"
 
 export default function HeroCarousel() {

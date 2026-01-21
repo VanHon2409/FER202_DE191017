@@ -1,21 +1,154 @@
-.pizza-img-wrapper {
-  height: 200px;        /* KHUNG ẢNH CỐ ĐỊNH */
-  overflow: hidden;     /* CẮT PHẦN DƯ */
+/* ===== FOOTER MAIN ===== */
+.footer-section-main {
+  background: radial-gradient(circle at top, #2a2a2a, #0f0f0f);
+  color: #fff;
+  padding: 60px 20px 30px;
+  border-top: 4px solid #e74c3c;
 }
 
-.pizza-img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* CẮT ẢNH CHO ĐỀU */
+.footer-wrapper {
+  max-width: 1200px;
+  margin: auto;
 }
 
-.pizza-img-wrapper {
-  height: 180px;
-  overflow: hidden;
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
 }
 
-.pizza-img-wrapper img {
-  width: 100%;
-  height: 100%;
+.footer-col h5 {
+  color: #e74c3c;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 8px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.7;
+  margin: 6px 0;
+}
+
+/* ===== CONTACT + AVATAR ===== */
+.contact-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-avatar {
+  margin-bottom: 15px;
+}
+
+.contact-avatar img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
   object-fit: cover;
+  border: 3px solid #e74c3c;
+  box-shadow: 0 0 20px rgba(231, 76, 60, 0.7);
+  transition: all 0.3s ease;
+}
+
+.contact-avatar img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(231, 76, 60, 1);
+}
+
+/* ===== SOCIAL ===== */
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  background: rgba(231, 76, 60, 0.2);
+  padding: 10px;
+  border-left: 3px solid #e74c3c;
+  transition: 0.3s;
+}
+
+.social-media a:hover {
+  background: #e74c3c;
+}
+
+/* ===== LINKS ===== */
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin: 10px 0;
+}
+
+.footer-list a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-list a:hover {
+  color: #e74c3c;
+  padding-left: 6px;
+}
+
+/* ===== NEWSLETTER ===== */
+.newsletter-box {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e74c3c;
+  background: #111;
+  color: #fff;
+}
+
+.newsletter-box button {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.newsletter-box button:hover {
+  background: #c0392b;
+}
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-bottom-line {
+  border-top: 1px solid #444;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .footer-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-box {
+    align-items: center;
+    text-align: center;
+  }
 }
