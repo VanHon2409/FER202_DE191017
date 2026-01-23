@@ -1,9 +1,11 @@
 import { pizzaData } from "../data/data";
+import { useNavigate } from "react-router-dom";
 
 function Menu() {
+  const navigate = useNavigate();
   return (
     <div className="container my-5">
-      <h3 className="text-center mb-4">Our Menu</h3>
+      <h3 className="text-center mb-4 text-white">Our Menu</h3>
 
       <div className="row">
         {pizzaData.map((pizza) => (
@@ -26,7 +28,12 @@ function Menu() {
               <div className="card-body">
                 <h5 className="card-title">{pizza.name}</h5>
                 <p className="text-danger fw-bold">${pizza.price}</p>
-                <button className="btn btn-outline-dark w-100">View Detail</button>
+                <button 
+                  className="btn btn-outline-dark w-100"
+                  onClick={() => navigate(`/detail/${pizza.id}`)}
+                >
+                  View Detail
+                </button>
                 <button className="btn btn-dark w-100 mt-2">Buy</button>
                 
               </div>

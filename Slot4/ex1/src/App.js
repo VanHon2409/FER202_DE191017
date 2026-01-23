@@ -8,6 +8,7 @@ import Booking from './components/Booking';
 import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
+import Detail from './components/Detail';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         } />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/detail/:id" element={<Detail />} />
       </Routes>
       <Footer />
     </Router>

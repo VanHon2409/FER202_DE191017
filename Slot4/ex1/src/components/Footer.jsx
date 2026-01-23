@@ -1,5 +1,4 @@
 import "../App.css";
-
 function Footer() {
   return (
     <footer className="footer-section-main">
@@ -9,7 +8,6 @@ function Footer() {
           {/* CONTACT + AVATAR */}
           <div className="footer-col">
             <div className="contact-box">
-
               <div className="contact-avatar">
                 <img src="/images/avt.jpg" alt="Avatar" />
               </div>
@@ -62,9 +60,7 @@ function Footer() {
               <button>Đăng ký</button>
             </div>
           </div>
-
         </div>
-
         <div className="footer-bottom-line">
           <p>© 2026 Văn Hơn - Pizza Restaurant. All rights reserved.</p>
           <p>Designed with ❤️ for Pizza Lovers</p>
@@ -73,5 +69,4 @@ function Footer() {
     </footer>
   );
 }
-
 export default Footer;
