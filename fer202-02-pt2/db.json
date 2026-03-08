@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "anhnv",
+      "password": "admin123",
+      "fullName": "Nguyễn Văn Anh"
+    },
+    {
+      "id": "2",
+      "username": "TamNT",
+      "password": "admin123",
+      "fullName": "Nguyễn Thị Tâm"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "1",
+      "userId": "1",
+      "name": "Lunch",
+      "amount": "85000",
+      "category": "Food",
+      "date": "2025-10-02"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "name": "Electricity Bill",
+      "amount": 450000,
+      "category": "Utilities",
+      "date": "2025-10-03"
+    },
+    {
+      "id": "3",
+      "userId": "1",
+      "name": "Cinema",
+      "amount": 120000,
+      "category": "Entertainment",
+      "date": "2025-10-05"
+    },
+    {
+      "id": "4",
+      "userId": "1",
+      "name": "Cafe",
+      "amount": 95000,
+      "category": "Food",
+      "date": "2025-10-07"
+    },
+    {
+      "id": "075c",
+      "name": "egg",
+      "amount": 200000,
+      "category": "food",
+      "date": "2026-03-06",
+      "userId": "1"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
